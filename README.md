@@ -25,6 +25,7 @@ The circuit uses the following main components:
 The amplifier was tested with a 250 mV input signal. The output voltage measured was 1.91 V.
 
 **Voltage Gain**: A = Vout / Vin = 1.91V / 0.25V ≈ 7.64
+> 📷 *See result image below*  
 ![Voltage Gain](docs/Amplif.png)
 
 ---

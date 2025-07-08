@@ -1,0 +1,18 @@
+** Profile: "SCHEMATIC1-Sim2_TimeDomain_ParamSweep"  [ D:\FACULTATE\AN_1_MASTER\PAC\Teme\Tema5_EtajAmplClAB\tema5_etajamplclab-schematic1-sim2_timedomain_paramsweep.sim ] 
+
+** Creating circuit file "tema5_etajamplclab-schematic1-sim2_timedomain_paramsweep.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10m 0 1u 
+.STEP PARAM v LIST 250m  425m 475m 500m 525m 550m 600m 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\tema5_etajamplclab-SCHEMATIC1.net" 
+
+
+.END

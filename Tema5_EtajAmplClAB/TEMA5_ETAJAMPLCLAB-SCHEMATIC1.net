@@ -1,0 +1,17 @@
+* source TEMA5_ETAJAMPLCLAB
+V_V1         1 0  
++SIN 0 500m 1k 0 0 0
+R_R1         N01026 N00969  100k  
+V_V2         N00969 0 12Vdc
+R_R2         0 N01026  15k  
+C_C1         1 N01026  1u  
+R_R3         4 N00969  1k  
+C_C2         3 2  1000u  
+R_R4         0 N01142  100  
+Q_Q1         N00969 4 3 BC107A 
+R_R5         0 2  16  
+Q_Q2         5 N01026 N01142 BC107A 
+D_D1         4 N01086 D1N4148 
+Q_Q3         0 5 3 BC177 
+D_D2         N01086 5 D1N4148 
+.PARAM  f=250 v=250m

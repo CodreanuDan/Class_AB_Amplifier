@@ -1,0 +1,19 @@
+** Profile: "SCHEMATIC1-Sim3_BandaDeFrecventa"  [ D:\FACULTATE\AN_1_MASTER\PAC\Teme\Tema5_EtajAmplClAB\tema5_etajamplclab-SCHEMATIC1-Sim3_BandaDeFrecventa.sim ] 
+
+** Creating circuit file "tema5_etajamplclab-SCHEMATIC1-Sim3_BandaDeFrecventa.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 10 100000
+.OP
+.MC 6 AC V([2]) YMAX OUTPUT ALL 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\tema5_etajamplclab-SCHEMATIC1.net" 
+
+
+.END

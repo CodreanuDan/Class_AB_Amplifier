@@ -1,0 +1,54 @@
+
+**** 01/06/25 14:53:21 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Sim3_BandaDeFrecventa"  [ D:\FACULTATE\AN_1_MASTER\PAC\Teme\Tema5_EtajAmplClAB\tema5_etajamplclab-SCHEMATIC1
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tema5_etajamplclab-SCHEMATIC1-Sim3_BandaDeFrecventa.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 250 2500
+.OP
+.MC 6 AC V YMAX OUTPUT ALL 
+-----------$
+ERROR -- Must be a two terminal device
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\tema5_etajamplclab-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING tema5_etajamplclab-SCHEMATIC1.net ****
+* source TEMA5_ETAJAMPLCLAB
+R_R1         N01026 N00969  100k  
+V_V2         N00969 0 12Vdc
+V_V1         1 0 DC 0Vdc AC 250m 
+R_R2         0 N01026  15k  
+C_C1         1 N01026  1u  
+R_R3         4 N00969  1k  
+C_C2         3 2  1000u  
+R_R4         0 N01142  100  
+Q_Q1         N00969 4 3 BC107A 
+R_R5         0 2  16  
+Q_Q2         5 N01026 N01142 BC107A 
+D_D1         4 N01086 D1N4148 
+Q_Q3         0 5 3 BC177 
+D_D2         N01086 5 D1N4148 
+.PARAM  f=250 v=250m
+
+**** RESUMING tema5_etajamplclab-SCHEMATIC1-Sim3_BandaDeFrecventa.sim.cir ****
+.END
+

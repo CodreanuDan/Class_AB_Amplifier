@@ -1,0 +1,18 @@
+** Profile: "SCHEMATIC1-Sim4_CoefDIstorsiuniFourier"  [ D:\FACULTATE\AN_1_MASTER\PAC\Teme\Tema5_EtajAmplClAB\tema5_etajamplclab-SCHEMATIC1-Sim4_CoefDIstorsiuniFourier.sim ] 
+
+** Creating circuit file "tema5_etajamplclab-SCHEMATIC1-Sim4_CoefDIstorsiuniFourier.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 1u 
+.FOUR 250 10 V([2]) 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\tema5_etajamplclab-SCHEMATIC1.net" 
+
+
+.END

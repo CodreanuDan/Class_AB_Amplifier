@@ -1,7 +1,5 @@
 # Class_AB_Amplifier
 
-# Class AB Amplifier Stage Project
-
 ## 🔧 Project Description
 
 This project demonstrates the design and simulation of a **Class AB amplifier stage** using discrete components. The amplifier was built and tested in a simulation environment for small-signal performance, frequency response, and harmonic distortion.
